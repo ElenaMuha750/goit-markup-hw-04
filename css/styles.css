@@ -1,6 +1,6 @@
 /* 
 основной цвет заголовков  #212121;
-основной белый цвет, основной цвет фона  #FFFFFF;
+основной белый цвет, основной цвет фона #FFFFFF;
 основной цвет текста #757575;
 акцент  #2196F3;
 вторичный цвет фона #F5F4FA;
@@ -59,7 +59,7 @@ img {
   padding-right: 15px;
   margin-left: auto;
   margin-right: auto;
-  /* outline: 2px solid teal; */
+  outline: 2px solid teal;
 }
 
 /* ----------------Лого---------------- */
@@ -78,7 +78,6 @@ img {
 .logo-black {
   color: #000000;
 }
-
 .logo-white {
   color: var(--primary-white-color);
 }
@@ -155,6 +154,7 @@ img {
 .current {
   color: var(--accent-color);
 }
+
 /* --------------------Hero---------------------- */
 
 .hero {
@@ -162,10 +162,10 @@ img {
   padding-bottom: 200px;
   margin-right: auto;
   margin-left: auto;
-  min-width: 1600px;
+  max-width: 1600px;
   text-align: center;
   background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
-    url(../images/hero-Img.jpg);
+    url(../images/hero-img.jpg);
   background-color: #2f303a;
 }
 
@@ -181,8 +181,6 @@ img {
   letter-spacing: 0.06em;
   text-transform: uppercase;
   color: #ffffff;
-
-  /* background-color: tomato; */
 }
 
 .button {
@@ -328,6 +326,46 @@ img {
   text-align: center;
   letter-spacing: 0.03em;
   color: var(--main-text-color);
+  margin-bottom: 16px;
+}
+
+.staff-soc-list {
+  display: flex;
+  justify-content: center;
+}
+
+.staff-soc-link {
+  width: 44px;
+  height: 44px;
+  background-color: var(--primary-white-color);
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.staff-soc-icon {
+  fill: #afb1b8;
+}
+
+.staff-soc-link:hover,
+.staff-soc-link:focus {
+  background-color: var(--accent-color);
+}
+
+.staff-soc-link:hover .staff-soc-icon,
+.staff-soc-link:focus .staff-soc-icon {
+  fill: var(--primary-white-color);
+}
+
+.staff-soc-item + .staff-soc-item {
+  margin-left: 10px;
+}
+
+/*-------------- Постоянный клиенты ------------*/
+
+.section-clients {
+  padding: 94px 0;
 }
 
 /* ---------------------Footer------------------ */
