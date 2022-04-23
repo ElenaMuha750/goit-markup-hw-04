@@ -132,7 +132,8 @@ img {
 }
 
 .contact-link {
-  display: block;
+  display: inline-flex;
+  align-items: center;
   padding-top: 32px;
   padding-bottom: 32px;
   font-weight: 500;
@@ -153,6 +154,16 @@ img {
 
 .current {
   color: var(--accent-color);
+}
+
+.icon {
+  margin-right: 10px;
+  fill: var(--main-text-color);
+}
+
+.contact-item-icon:hover .icon,
+.contact-item-icone:focus .icon {
+  fill: var(--accent-color);
 }
 
 /* --------------------Hero---------------------- */
@@ -407,11 +418,13 @@ img {
   fill: #afb1b8;
 }
 
-.clients-link:hover {
+.clients-link:hover,
+.clients-link:focus {
   border: 1px solid var(--accent-color);
 }
 
-.clients-link:hover .clients-icon {
+.clients-link:hover .clients-icon,
+.clients-link:focus .clients-icon {
   fill: var(--accent-color);
 }
 
